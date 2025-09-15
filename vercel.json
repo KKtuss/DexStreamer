@@ -1,18 +1,8 @@
 {
-  "functions": {
-    "src/workers/websocket-worker.js": {
-      "runtime": "nodejs18.x",
-      "maxDuration": 300
-    },
-    "src/workers/stats-worker.js": {
-      "runtime": "nodejs18.x",
-      "maxDuration": 300
-    }
-  },
   "crons": [
     {
       "path": "/api/cron/stats-update",
-      "schedule": "*/30 * * * *"
+      "schedule": "0 12 * * *"
     }
   ]
 }
